@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Arch linux :: Global Knowledge</title>
+    <title>Asciidoc :: Global Knowledge</title>
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
@@ -57,10 +57,10 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="index.html">Arch linux</a>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="asciidoc.html">Asciidoc</a>
   </li>
 </ul>
@@ -134,23 +134,88 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">Computer Science</a></li>
-    <li><a href="index.html">Arch linux</a></li>
+    <li><a href="asciidoc.html">Asciidoc</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/cjaragonayala/globalk/edit/master/k-cscience/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/cjaragonayala/globalk/edit/master/k-cscience/modules/ROOT/pages/asciidoc.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Arch linux</h1>
-<div class="sect1">
-<h2 id="_xorg"><a class="anchor" href="#_xorg"></a>XORG</h2>
+<h1 class="page">Asciidoc</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>It is a display server.
-Requisite for GUI applications.</p>
+<p>Asciidoc is a plain text writing format, using a line-oriented language.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_documento_asciidoc"><a class="anchor" href="#_documento_asciidoc"></a>Documento asciidoc</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Puede ser de varios tipos (doctype): especifica estructura del documento.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>article (default)</p>
+</li>
+<li>
+<p>book: multiple 0-level sections.
+Can be regular book (chapters and special sections) o multi-part book (parts contain chap and special section)</p>
+</li>
+<li>
+<p>manpage: extended header options for manpage</p>
+</li>
+<li>
+<p>inline: to use asciidoc format in order to transform it to other formats (as HTML)</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Document structure</dt>
+<dd>
+<p>It is hierarchical (tree structure).</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>Header</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Document-wide configuration</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Blocks</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Lines</dt>
+<dd>
+<p>Text separated by newline characters or the boundary of the document.
+A line may also be empty. This may or may not be relevant to the syntax.
+Asciidoc syntax aspects usually takes up  a whole line.
+A line = 2 or more lines if a backslash is placed at the end of a line.</p>
+</dd>
+<dt class="hdlist1">Blocks</dt>
+<dd>
+<p>Each block is usually surrounded by empty lines.
+Blocks can have lines of metadata: attributes, anchor or title.
+The block metadata is placed directly adjacent to and above the block.
+Blocks can be nested depending on their type.</p>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
