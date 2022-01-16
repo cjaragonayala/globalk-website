@@ -63,6 +63,9 @@
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="asciidoc.html">Asciidoc</a>
   </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="vim.html">Vim</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -95,6 +98,14 @@
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../globalk/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../k-management/1.0/index.html">Management</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../k-management/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -208,9 +219,22 @@ A line = 2 or more lines if a backslash is placed at the end of a line.</p>
 <dt class="hdlist1">Blocks</dt>
 <dd>
 <p>Each block is usually surrounded by empty lines.
-Blocks can have lines of metadata: attributes, anchor or title.
+Blocks can have lines of metadata: attributes, anchor or
+title.
 The block metadata is placed directly adjacent to and above the block.
 Blocks can be nested depending on their type.</p>
+</dd>
+<dt class="hdlist1">Text</dt>
+<dd>
+<p>Surrounded by markers, delimiters, metadata.
+Text is subject to substitutions in different levels.
+Normal text: all kind of possible substitutions.
+Verbatim text: minimal substitutions.
+Raw text: not substitutions at all.</p>
+</dd>
+<dt class="hdlist1">Asciidoc processor</dt>
+<dd>
+<p>It is a program that converts asciidoc document to another format.</p>
 </dd>
 </dl>
 </div>
