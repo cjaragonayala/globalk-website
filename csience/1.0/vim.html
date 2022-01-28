@@ -94,6 +94,14 @@
       </ul>
     </li>
     <li class="component">
+      <a class="title" href="../../k-dota2/1.0/index.html">Dota 2</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../k-dota2/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
       <a class="title" href="../../globalk/1.0/index.html">Global Knowledge</a>
       <ul class="versions">
         <li class="version is-latest">
@@ -156,6 +164,19 @@
 </aside>
 <article class="doc">
 <h1 class="page">Vim</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_install_vim_plugins">Install vim plugins</a></li>
+<li><a href="#_using_macros">Using macros</a></li>
+<li><a href="#_what_is_behind_a_plugin_where_are_they">What is behind a plugin? Where are they?</a></li>
+<li><a href="#_how_can_you_organize_your_workspace">How can you organize your workspace?</a></li>
+<li><a href="#_how_to_see_a_list_of_current_buffers">How to see a list of current buffers?</a></li>
+<li><a href="#_parts_of_a_buffer_list">Parts of a buffer list</a></li>
+<li><a href="#_how_to_open_another_file">How to open another file</a></li>
+<li><a href="#_how_to_switch_to_a_different_buffer">How to switch to a different buffer</a></li>
+</ul>
+</div>
 <div class="sect1">
 <h2 id="_install_vim_plugins"><a class="anchor" href="#_install_vim_plugins"></a>Install vim plugins</h2>
 <div class="sectionbody">
@@ -201,6 +222,81 @@
 <p>To play a macro: type &lt;n-times-of-plays&gt;@&lt;macro-name&gt; (time of plays is optional)</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_behind_a_plugin_where_are_they"><a class="anchor" href="#_what_is_behind_a_plugin_where_are_they"></a>What is behind a plugin? Where are they?</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>We need a directory to store plugins.</p>
+</li>
+<li>
+<p>Every time you open a vim session it is needed to load plugins, so add a line of code in vimrc for that ("packloadall")
+.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_can_you_organize_your_workspace"><a class="anchor" href="#_how_can_you_organize_your_workspace"></a>How can you organize your workspace?</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Tabs</p>
+</li>
+<li>
+<p>Buffers</p>
+</li>
+<li>
+<p>Folds</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_see_a_list_of_current_buffers"><a class="anchor" href="#_how_to_see_a_list_of_current_buffers"></a>How to see a list of current buffers?</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:ls</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parts_of_a_buffer_list"><a class="anchor" href="#_parts_of_a_buffer_list"></a>Parts of a buffer list</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;id buffer&gt; %[if present = buffer in current window]a[if present, buffer is active] &lt;filename&gt; line &lt;current cursor position&gt;</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_open_another_file"><a class="anchor" href="#_how_to_open_another_file"></a>How to open another file</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:e &lt;filename-path&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_switch_to_a_different_buffer"><a class="anchor" href="#_how_to_switch_to_a_different_buffer"></a>How to switch to a different buffer</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:b &lt;id buffer or unique part name&gt;</pre>
+</div>
 </div>
 </div>
 </div>
