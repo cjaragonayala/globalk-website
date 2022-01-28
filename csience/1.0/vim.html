@@ -175,6 +175,9 @@
 <li><a href="#_parts_of_a_buffer_list">Parts of a buffer list</a></li>
 <li><a href="#_how_to_open_another_file">How to open another file</a></li>
 <li><a href="#_how_to_switch_to_a_different_buffer">How to switch to a different buffer</a></li>
+<li><a href="#_how_to_delete_a_buffer">How to delete a buffer</a></li>
+<li><a href="#_how_to_cycle_through_files">How to cycle through files</a></li>
+<li><a href="#_how_to_opencreate_a_new_file_within_vim_session">How to open/create-a-new-file within vim session</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -295,7 +298,47 @@
 <div class="sectionbody">
 <div class="literalblock">
 <div class="content">
-<pre>:b &lt;id buffer or unique part name&gt;</pre>
+<pre>:b&lt;id buffer or unique part name&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can use tab for completion names</p>
+</div>
+<div class="paragraph">
+<p>Also to go for the next buffer try <code>:bn</code> (or with unimpaired plugin use <code>]b</code>) and for the previous one try <code>bp</code> (<code>[b</code>)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_delete_a_buffer"><a class="anchor" href="#_how_to_delete_a_buffer"></a>How to delete a buffer</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:bd</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_cycle_through_files"><a class="anchor" href="#_how_to_cycle_through_files"></a>How to cycle through files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With unimpaired plugin</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>]f
+[f</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_opencreate_a_new_file_within_vim_session"><a class="anchor" href="#_how_to_opencreate_a_new_file_within_vim_session"></a>How to open/create-a-new-file within vim session</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:e &lt;relative path of pwd&gt;</pre>
 </div>
 </div>
 </div>
