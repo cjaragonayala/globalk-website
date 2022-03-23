@@ -66,6 +66,9 @@
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="vim.html">Vim</a>
   </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="install-software-arch-linux.html">How to install software manually in Arch Linux</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -106,6 +109,14 @@
       <ul class="versions">
         <li class="version is-latest">
           <a href="../../globalk/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../k-languages/1.0/index.html">Languages</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../k-languages/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -178,6 +189,9 @@
 <li><a href="#_how_to_delete_a_buffer">How to delete a buffer</a></li>
 <li><a href="#_how_to_cycle_through_files">How to cycle through files</a></li>
 <li><a href="#_how_to_opencreate_a_new_file_within_vim_session">How to open/create-a-new-file within vim session</a></li>
+<li><a href="#_how_to_move_lines_up_and_down">How to move lines up and down</a></li>
+<li><a href="#_how_to_split_horizontally_a_window">How to split horizontally a window</a></li>
+<li><a href="#_how_to_setunset_relativeabsolute_line_number">How to set/unset relative/absolute line number</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -340,6 +354,53 @@
 <div class="content">
 <pre>:e &lt;relative path of pwd&gt;</pre>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_move_lines_up_and_down"><a class="anchor" href="#_how_to_move_lines_up_and_down"></a>How to move lines up and down</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With unimpaired plugin, use the mappings</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[e</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>]e</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_split_horizontally_a_window"><a class="anchor" href="#_how_to_split_horizontally_a_window"></a>How to split horizontally a window</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>:sp &lt;file-path&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_setunset_relativeabsolute_line_number"><a class="anchor" href="#_how_to_setunset_relativeabsolute_line_number"></a>How to set/unset relative/absolute line number</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To set &amp; unset absolute line number</p>
+</div>
+<div class="paragraph">
+<p>:set nu[mber]
+:set nonu</p>
+</div>
+<div class="paragraph">
+<p>To set &amp; unset relative line number</p>
+</div>
+<div class="paragraph">
+<p>:set rnu
+:set nornu</p>
 </div>
 </div>
 </div>
