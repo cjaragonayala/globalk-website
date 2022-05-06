@@ -175,8 +175,6 @@
 </aside>
 <article class="doc">
 <h1 class="page">Asciidoc</h1>
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph">
 <p>Asciidoc is a plain text writing format, using a line-oriented language.</p>
 </div>
@@ -195,123 +193,67 @@
 <div class="paragraph">
 <p>asdadf</p>
 </div>
-<script src="https://unpkg.com/vue@3"></script>
-
-<div id="app">
-  <input type="number" :value="c" @change="setC"> Celsius =
-  <input type="number" :value="f" @change="setF"> Fahrenheit
-</div>
-
-<script type="module">
-  const { createApp, ref } = Vue
-
-createApp({
-  setup() {
-    const c = ref(0)
-    const f = ref(32)
-
-    function setC(e, v = +e.target.value) {
-      c.value = v
-      f.value = v * (9 / 5) + 32
-    }
-
-    function setF(e, v = +e.target.value) {
-      f.value = v
-      c.value = (v - 32) * (5 / 9)
-    }
-
-    return {
-      c,
-      f,
-      setC,
-      setF
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
     }
   }
-}).mount('#app')
+</script>
 
-/script>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_documento_asciidoc"><a class="anchor" href="#_documento_asciidoc"></a>Documento asciidoc</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Puede ser de varios tipos (doctype): especifica estructura del documento.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>article (default)</p>
-</li>
-<li>
-<p>book: multiple 0-level sections.
-Can be regular book (chapters and special sections) o multi-part book (parts contain chap and special section)</p>
-</li>
-<li>
-<p>manpage: extended header options for manpage</p>
-</li>
-<li>
-<p>inline: to use asciidoc format in order to transform it to other formats (as HTML)</p>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Document structure</dt>
-<dd>
-<p>It is hierarchical (tree structure).</p>
-</dd>
-</dl>
-</div>
-</li>
-<li>
-<p>Header</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Title</p>
-</li>
-<li>
-<p>Document-wide configuration</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Blocks</p>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Lines</dt>
-<dd>
-<p>Text separated by newline characters or the boundary of the document.
+<div id="app">{{ message }}</div>
+
+<script type="module">
+  import { createApp } from 'vue'
+
+  createApp({
+    data() {
+      return {
+        message: 'Hello Vue!'
+      }
+    }
+  }).mount('#app')
+</script>
++++
+
+== Documento asciidoc
+
+Puede ser de varios tipos (doctype): especifica estructura del documento.
+
+* article (default)
+* book: multiple 0-level sections.
+Can be regular book (chapters and special sections) o multi-part book (parts contain chap and special section)
+* manpage: extended header options for manpage
+* inline: to use asciidoc format in order to transform it to other formats (as HTML)
+
+Document structure:: It is hierarchical (tree structure).
+* Header
+** Title
+** Document-wide configuration
+* Blocks
+
+Lines::
+Text separated by newline characters or the boundary of the document.
 A line may also be empty. This may or may not be relevant to the syntax.
 Asciidoc syntax aspects usually takes up  a whole line.
-A line = 2 or more lines if a backslash is placed at the end of a line.</p>
-</dd>
-<dt class="hdlist1">Blocks</dt>
-<dd>
-<p>Each block is usually surrounded by empty lines.
+A line = 2 or more lines if a backslash is placed at the end of a line.
+
+Blocks::
+Each block is usually surrounded by empty lines.
 Blocks can have lines of metadata: attributes, anchor or
 title.
 The block metadata is placed directly adjacent to and above the block.
-Blocks can be nested depending on their type.</p>
-</dd>
-<dt class="hdlist1">Text</dt>
-<dd>
-<p>Surrounded by markers, delimiters, metadata.
+Blocks can be nested depending on their type.
+
+Text::
+Surrounded by markers, delimiters, metadata.
 Text is subject to substitutions in different levels.
 Normal text: all kind of possible substitutions.
 Verbatim text: minimal substitutions.
-Raw text: not substitutions at all.</p>
-</dd>
-<dt class="hdlist1">Asciidoc processor</dt>
-<dd>
-<p>It is a program that converts asciidoc document to another format.</p>
-</dd>
-</dl>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+Raw text: not substitutions at all.
+
+Asciidoc processor::
+It is a program that converts asciidoc document to another format.
 </article>
   </div>
 </main>
