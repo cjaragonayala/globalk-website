@@ -195,18 +195,12 @@
 <div class="paragraph">
 <p>asdadf</p>
 </div>
-<script type="importmap">
-  {
-    "imports": {
-      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-    }
-  }
-</script>
+<script src="https://unpkg.com/vue@3"></script>
 
 <div id="app">{{ message }}</div>
 
-<script type="module">
-  import { createApp } from 'vue'
+<script>
+  const { createApp } = Vue
 
   createApp({
     data() {
